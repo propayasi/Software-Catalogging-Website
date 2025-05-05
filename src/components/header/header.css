@@ -1,0 +1,88 @@
+/* ========== Header Styling ========== */
+
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d0c22;
+  margin: 0;
+}
+
+/* ========== User Menu Styling ========== */
+
+.user-menu {
+  position: relative;
+}
+
+.user-menu > button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.user-menu > button:hover {
+  background: #0056b3;
+}
+
+/* ========== Dropdown Styling ========== */
+
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  animation: fadeIn 0.2s ease;
+}
+
+.user-dropdown button {
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: #333;
+}
+
+.user-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+/* ========== Animation ========== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

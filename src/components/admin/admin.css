@@ -1,0 +1,130 @@
+/* ========== Admin Panel Layout ========== */
+
+.admin-panel {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-segmented-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-segmented-controls button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.admin-segmented-controls button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ========== Statistics ========== */
+
+.admin-statistics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* ========== User Table ========== */
+
+.admin-users {
+  margin-top: 2rem;
+}
+
+.user-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.user-controls input,
+.user-controls select {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.user-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.user-table input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}

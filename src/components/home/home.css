@@ -1,0 +1,96 @@
+.body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .body .title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #1f1f1f;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  .body .desc {
+    font-size: 1.05rem;
+    color: #333;
+    margin-top: 2rem;
+    max-width: 800px;
+    padding: 0 1rem;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  }
+  
+  .body .btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin-top: 3rem;
+    font-family: inherit;
+    font-size: 1.05rem;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.03rem;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+    transition: background-color 0.3s ease;
+  }
+  
+  .body .btn span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+  }
+  
+  .body .btn:hover span {
+    color: black;
+  }
+  
+  .body .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: #000000;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    z-index: 0;
+  }
+  
+  .body .btn:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .body .link {
+    margin-top: 1rem;
+    background: transparent;
+    cursor: pointer;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .body .link:hover {
+    color: #0047ab;
+  }
+  

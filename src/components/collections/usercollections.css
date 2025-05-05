@@ -1,0 +1,171 @@
+/* Container and Layout */
+.collection-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fafafa;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .collection-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Create Collection */
+  .collection-creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .collection-creator input {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 250px;
+  }
+  
+  .collection-creator button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .collection-creator button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add to Collection */
+  .collection-adder {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .collection-adder select {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    min-width: 220px;
+  }
+  
+  .collection-adder button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .collection-adder button:hover {
+    background-color: #218838;
+  }
+  
+  /* Collection Card */
+  .collection-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .collection-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .collection-header button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .collection-header button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Component List */
+  .component-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .component-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .component-list strong {
+    font-weight: 600;
+  }
+  
+  .component-list span {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  .component-list button {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .component-list button:hover {
+    background-color: #e8590c;
+  }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 768px) {
+    .collection-creator,
+    .collection-adder {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .collection-creator input,
+    .collection-adder select {
+      width: 100%;
+    }
+  }
+  
